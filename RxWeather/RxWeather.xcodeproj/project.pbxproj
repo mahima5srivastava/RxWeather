@@ -19,6 +19,7 @@
 		D496E48124C5E6A100BACAA2 /* RxWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496E48024C5E6A100BACAA2 /* RxWeatherTests.swift */; };
 		D496E48C24C5E6A100BACAA2 /* RxWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496E48B24C5E6A100BACAA2 /* RxWeatherUITests.swift */; };
 		D496E49B24C5EB7000BACAA2 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496E49A24C5EB7000BACAA2 /* WeatherModel.swift */; };
+		D496E49D24C5EDD700BACAA2 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496E49C24C5EDD700BACAA2 /* URLRequest+Extension.swift */; };
 		FB78B77B2521703FF4753CF8 /* Pods_RxWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C388F74A222D1B8C737A890 /* Pods_RxWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		D496E48B24C5E6A100BACAA2 /* RxWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxWeatherUITests.swift; sourceTree = "<group>"; };
 		D496E48D24C5E6A100BACAA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D496E49A24C5EB7000BACAA2 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		D496E49C24C5EDD700BACAA2 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		D8BED35E81876E683BD0902B /* Pods_RxWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				D496E47424C5E6A100BACAA2 /* LaunchScreen.storyboard */,
 				D496E47724C5E6A100BACAA2 /* Info.plist */,
 				D496E46F24C5E6A000BACAA2 /* RxWeather.xcdatamodeld */,
+				D496E49C24C5EDD700BACAA2 /* URLRequest+Extension.swift */,
 			);
 			path = RxWeather;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D496E47124C5E6A000BACAA2 /* RxWeather.xcdatamodeld in Sources */,
+				D496E49D24C5EDD700BACAA2 /* URLRequest+Extension.swift in Sources */,
 				D496E46B24C5E6A000BACAA2 /* ViewController.swift in Sources */,
 				D496E46724C5E6A000BACAA2 /* AppDelegate.swift in Sources */,
 				D496E46924C5E6A000BACAA2 /* SceneDelegate.swift in Sources */,
