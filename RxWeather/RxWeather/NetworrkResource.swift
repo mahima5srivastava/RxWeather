@@ -14,8 +14,13 @@ struct Resource<T: Decodable> {
     let url: URL
 }
 
-extension URLRequest {
-    static func load<T: Decodable>(resource: Resource<T>) -> Observable<T> {
+protocol NetworkProtocol {
+    func load<T: Decodable>(resource: Resource<T>) -> Observable<T>
+}
+
+struct NetworkResource: NetworkProtocol {
+    
+    func load<T: Decodable>(resource: Resource<T>) -> Observable<T> {
         return Observable.just(resource.url).flatMap { url -> Observable<Data> in
             let request = URLRequest(url: url)
             return URLSession.shared.rx.data(request: request)

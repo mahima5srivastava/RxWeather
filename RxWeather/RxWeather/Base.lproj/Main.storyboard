@@ -21,7 +21,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hzI-Fu-1aq">
                                         <rect key="frame" x="16" y="0.0" width="350" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ry-qg-F8F">
                                         <rect key="frame" x="170" y="112" width="42" height="20.5"/>
@@ -52,8 +52,8 @@
                     </view>
                     <connections>
                         <outlet property="cityTextField" destination="hzI-Fu-1aq" id="ZaO-bl-CLE"/>
-                        <outlet property="humidityTextField" destination="A8U-Ln-XdW" id="TOc-GM-0Jg"/>
-                        <outlet property="temperatureTextField" destination="7Ry-qg-F8F" id="b1O-be-Cc8"/>
+                        <outlet property="humidityLabel" destination="A8U-Ln-XdW" id="b4B-ZS-h8Q"/>
+                        <outlet property="temperatureLabel" destination="7Ry-qg-F8F" id="GNL-wC-opK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
