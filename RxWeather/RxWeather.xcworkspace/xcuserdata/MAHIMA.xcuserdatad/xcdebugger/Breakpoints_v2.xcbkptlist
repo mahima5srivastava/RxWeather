@@ -3,4 +3,54 @@
    uuid = "A74A0878-25E0-478B-8A4F-F434835EB94F"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F5D2B6B-FD59-4E83-9B31-2274503FBAEC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxWeather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchWeather(by:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F5D2B6B-FD59-4E83-9B31-2274503FBAEC - 9a760d6a015aeafc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RxWeather.ViewController.(fetchWeather in _5ED6BDB844995AD9CA796D531125BEED)(by: Swift.String) -&gt; ()"
+                  moduleName = "RxWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MAHIMA/Documents/RxWeather/RxWeather/RxWeather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1742">
+               </Location>
+               <Location
+                  uuid = "4F5D2B6B-FD59-4E83-9B31-2274503FBAEC - 3844c7167cdcbaf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxWeather.WeatherResult) -&gt; Swift.String in RxWeather.ViewController.(fetchWeather in _5ED6BDB844995AD9CA796D531125BEED)(by: Swift.String) -&gt; ()"
+                  moduleName = "RxWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MAHIMA/Documents/RxWeather/RxWeather/RxWeather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

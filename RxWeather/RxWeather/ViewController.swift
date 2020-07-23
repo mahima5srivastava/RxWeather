@@ -20,40 +20,31 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.cityTextField.rx.controlEvent(.editingDidEndOnExit)
-            .asObservable()
-            .map { self.cityTextField.text }
-            .subscribe(onNext: { city in
-                
-                if let city = city {
-                    if city.isEmpty {
-                        self.displayWeather(nil)
-                    } else {
-                        self.fetchWeather(by: city)
-                    }
+        self.cityTextField.rx.controlEvent(.editingDidEndOnExit).asObservable().map {
+            self.cityTextField.text
+        }.subscribe(onNext: { city in
+            if let city = city {
+                if city.isEmpty {
+                    self.displayWeather(nil)
+                } else {
+                    self.fetchWeather(by: city)
                 }
-                
-            }).disposed(by: disposeBag)
+            }
+        }).disposed(by: disposeBag)
     }
     
     private func fetchWeather(by city: String) {
-        
         guard let cityEncoded = city.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
             let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(cityEncoded)&appid=fedc8496d0971019df7563ba6c49d33c") else {
                 return
         }
         
         let resource = Resource<WeatherResult>(url: url)
-        
-        /* With Binders
-         let search = networkManager.load(resource: resource)
-         .observeOn(MainScheduler.instance)
-         .catchErrorJustReturn(WeatherResult.empty)
-         search.map { "\($0.main.temp) ℉" }
-         .bind(to: self.temperatureLabel.rx.text).disposed(by: disposeBag)
-         search.map { "\($0.main.humidity) 💦" }
-         .bind(to: self.humidityLabel.rx.text).disposed(by: disposeBag)
-         */
+//         let search = networkManager.load(resource: resource).observeOn(MainScheduler.instance).catchErrorJustReturn(WeatherResult.empty)
+//        print(search)
+//        search.map { "\($0.main.temp ?? 0.0) ℉" }.bind(to: self.temperatureLabel.rx.text).disposed(by: disposeBag)
+//        search.map { "\($0.main.humidity ?? 0.0) 💦" }.bind(to: self.humidityLabel.rx.text).disposed(by: disposeBag)
+//
         
         //With drivers
         let search = networkManager.load(resource: resource)
